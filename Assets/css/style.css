@@ -1,0 +1,160 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root
+{
+    --colorBtnLinks: #4D13D1;
+    --colorTitles: #181818;
+    --colorText: #4F4F4F;
+    --colorIconsVerify: #43B29E;
+    --colorWhite: #fff;
+}
+
+.navbar-container
+{
+    width: 100%;
+    height: max-content;
+    padding: 10px 0px;
+}
+
+
+/* Styles navbar mobile */
+
+.navbar-mobile
+{
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-mobile_logo h1 > a
+{
+    color: var(--colorTitles);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-mobile_menu
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    background-color: var(--colorIconsVerify);
+    padding: 50px 30px;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+}
+.navbar-mobile_menu.active
+{
+    left: 0;
+    transition: ease-in-out 1s;
+    -webkit-transition: ease-in-out 1s;
+    -moz-transition: ease-in-out 1s;
+    -ms-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+}
+
+.btn-close
+{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.btn-close i 
+{
+    font-size: 1.3rem;
+    color: var(--colorWhite);
+}
+
+.logo-menu_mobile
+{
+    margin: 50px 0px;
+}
+.logo-menu_mobile h2
+{
+    font-size: 2.4rem;
+}
+
+.logo-menu_mobile h2 > a 
+{
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+
+
+
+.links-menu_mobile ul
+{
+    margin-top: 30px;
+    list-style: none;
+}
+
+
+.links-menu_mobile ul > li
+{
+    margin-bottom: 20px;
+}
+
+.links-menu_mobile ul > li > a
+{
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+
+.buttons-menu_mobile
+{
+    margin-top: 50px;
+}
+
+.buttons-menu_mobile a
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px 3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 0px 5px #18181846;
+}
+.btn-sing-up
+{
+    margin-bottom: 20px;
+    color: var(--colorBtnLinks);
+    font-size: 0.8rem;
+    background-color: var(--colorWhite);
+}
+
+.btn-sing-in
+{
+    background-color: var(--colorBtnLinks);
+    color: var(--colorWhite);
+    font-size: 0.8rem;
+}
+
+
+
+/* Styles Hero */
+
